@@ -1,14 +1,14 @@
 ****Data Collection & Preprocessing****
 
-	The dataset for this loan eligibility prediction system was compiled from historical loan application records, 13 key features, including demographic, financial, and loan-specific attributes. The data was collected in a structured CSV format, with fields such as ApplicantIncome, LoanAmount, Credit_History, and Loan_Status (approved/rejected). To ensure robustness, synthetic samples were generated to address class imbalance, as the original dataset showed a skewed distribution—69% approvals (Y) versus 31% rejections (N).
+The dataset for this loan eligibility prediction system was compiled from historical loan application records, 13 key features, including demographic, financial, and loan-specific attributes. The data was collected in a structured CSV format, with fields such as ApplicantIncome, LoanAmount, Credit_History, and Loan_Status (approved/rejected). To ensure robustness, synthetic samples were generated to address class imbalance, as the original dataset showed a skewed distribution—69% approvals (Y) versus 31% rejections (N).
  
-	Preprocessing began with handling missing values, where numerical features like LoanAmount and Loan_Amount_Term were imputed using median values to mitigate outlier influence, while categorical variables (e.g., Gender, Self_Employed) were filled with the most frequent category (mode). The Credit_History field, critical for risk assessment, had 8.14% missing values, which were carefully imputed based on correlated features like income and loan amount. Categorical encoding transformed text-based features into numerical values: binary variables (e.g., Married) were label-encoded, and multi-class categories (e.g., Property_Area) underwent one-hot encoding to avoid ordinal bias.
+Preprocessing began with handling missing values, where numerical features like LoanAmount and Loan_Amount_Term were imputed using median values to mitigate outlier influence, while categorical variables (e.g., Gender, Self_Employed) were filled with the most frequent category (mode). The Credit_History field, critical for risk assessment, had 8.14% missing values, which were carefully imputed based on correlated features like income and loan amount. Categorical encoding transformed text-based features into numerical values: binary variables (e.g., Married) were label-encoded, and multi-class categories (e.g., Property_Area) underwent one-hot encoding to avoid ordinal bias.
 
-	This rigorous preprocessing pipeline addressed real-world data challenges—missing values, outliers, and class imbalance—while creating actionable features for model training. The cleaned dataset ensured reliable input for algorithms, directly supporting the project’s goal of building a fair, accurate, and scalable loan prediction system.
+This rigorous preprocessing pipeline addressed real-world data challenges—missing values, outliers, and class imbalance—while creating actionable features for model training. The cleaned dataset ensured reliable input for algorithms, directly supporting the project’s goal of building a fair, accurate, and scalable loan prediction system.
 
 ****Feature Engineering:****
 
-	Feature engineering plays a crucial role in enhancing the predictive power of the loan eligibility model by transforming raw data into meaningful features that better represent underlying patterns.
+Feature engineering plays a crucial role in enhancing the predictive power of the loan eligibility model by transforming raw data into meaningful features that better represent underlying patterns.
 
 Categorical Feature Encoding
 All categorical variables were transformed into numerical representations to make them compatible with machine learning algorithms: 
